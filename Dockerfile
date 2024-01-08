@@ -1,7 +1,7 @@
 From maven AS base
 WORKDIR /app
 COPY . /app
-mvn clean install
+RUN mvn clean install
 
 
 FROM lolhens/baseimage-openjre
